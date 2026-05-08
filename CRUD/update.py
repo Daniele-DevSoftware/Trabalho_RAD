@@ -6,7 +6,9 @@ def atualizar_aluno(matricula, nome, data_nascimento, nota):
   UPDATE alunos
   SET nome = ?, data_nascimento = ?, nota = ?
   WHERE matricula = ?
-  """, (matricula, nome, data_nascimento, nota))
+  """, (nome, data_nascimento, nota, matricula))
 
   conn.commit()
   conn.close()
+
+criar_tabela()
