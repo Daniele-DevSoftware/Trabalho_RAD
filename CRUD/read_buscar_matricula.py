@@ -4,7 +4,7 @@ def buscar_matricula(matricula):
 
   cursor.execute("""
   SELECT * FROM alunos WHERE matricula = ?
-  """, (matricula))
+  """, (matricula,))
 
   aluno = cursor.fetchone()
 
