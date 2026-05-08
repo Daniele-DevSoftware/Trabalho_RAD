@@ -1,4 +1,4 @@
-def buscar_nome(matricula):
+def buscar_nome(nome):
   conn = conectar()
   cursor = conn.cursor()
 
