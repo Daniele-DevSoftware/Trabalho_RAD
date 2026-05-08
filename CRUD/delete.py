@@ -4,7 +4,7 @@ def deletar_aluno(matricula):
 
   cursor.execute("""
   DELETE FROM alunos WHERE matricula = ?
-  """, (matricula))
+  """, (matricula,))
 
   conn.commit()
   conn.close()
