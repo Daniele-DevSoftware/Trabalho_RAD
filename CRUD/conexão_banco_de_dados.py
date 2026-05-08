@@ -1,3 +1,3 @@
-import sqlite 3
+import sqlite3
 def conectar():
   return sqlite3.connect("alunos.db")
